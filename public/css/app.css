@@ -1,0 +1,95 @@
+
+body{
+    
+    background:url(../images/bg4.png)no-repeat;
+    background-size:100%;
+}
+h2{
+    color:#226A80;
+    font-size:55px;
+    text-transformation:uppercase;
+    font-weight:800;
+    letter-spacing:2px;
+    line-height:60px;
+    margin-bottom:30px;
+    text-align:center
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box ;
+    font-family: "Poppins",sans-serif;
+}
+.media-icons{
+    position:relative;
+    display:flex;
+    align-items:center;
+    margin:10px 0;
+    flex-wrap: wrap;
+  
+  }
+  .media-icons li{
+    list-style:none;
+  }
+  .media-icons li a{
+  font-size:2em;
+  color:#262626;
+  margin:0 10px;
+  display:inline-block;
+  transition:0.5s
+  }
+  .media-icons li a:hover {
+    transform:translateY(-10px)
+  }
+
+            .login{
+                background-color: rgba(114,223,255,0.8);
+                margin-bottom: 10%;
+              
+                position:fixed;
+                padding:60px;
+                top:52%;
+                left:36%;
+                transform:translate(-50%,-50%);
+                border-top-left-radius: 100px;
+                border-bottom-right-radius:100px
+            }
+            .login input[type="text"],input[type="date"]{
+                
+                margin: 20px auto;
+                padding:10px 10px;
+                width:250px; 
+                background-color:none ;
+                border:2px solid block;
+                border-radius: 15px;
+                transition:0.8s;
+               
+
+            }
+            .login input[type="text"]:focus{
+                border-left:40px solid black;
+
+            }
+            .login >h1{
+                margin: 20px 20px;
+                margin-left: 62%;
+            }
+            .login input[type="button"]{
+                color:black;
+                background:none;
+                text-decoration:none;
+                text-transformation:uppercase;
+                font-weight:700;
+                margin-left: 90%;
+                letter-spacing:2px;
+                padding:10px 20px;
+                border-radius:5px;
+                transition:0.3s;
+                
+                transition-proprty:background
+
+            }
+            .login input[type="button"]:hover{ color:#fff}

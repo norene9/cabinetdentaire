@@ -1,0 +1,39 @@
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>الحجز</title>
+        <link rel="stylesheet" href="/css/app.css">
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    </head>
+    <%- include('header'); -%>
+    <body>
+    
+ <div class="app" >
+ 
+  <form class="login">
+    <h1>احجز موعدك</h1>
+    <div  class="row">
+    
+        <input type="text" name="Name" placeholder="الاسم">
+        <input type="text" name="Name" placeholder="اللقب">
+      
+    
+    </div>
+   
+    <input type="text" name="Num" placeholder="رقم الهاتف">
+    
+    
+  <input type="date" id="start" name="trip-start" value="2020-07-22" min="2021-01-01" max="2027-12-31">
+  
+    <input type="button" name="login" value="Next">
+  </form>
+ </div>      
+
+   
+</body>
+<%- include('footer'); -%>
+  </html>
