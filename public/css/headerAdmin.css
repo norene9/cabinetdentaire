@@ -1,0 +1,215 @@
+
+  
+  .overlay{
+    
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+  }
+  .all{
+    height: 110vh;
+    position: relative;
+    z-index:  10000;
+  }
+  .menu-item{
+      margin-right:35%;
+      
+  }
+  .navbar {
+    width: 100%;
+    position:fixed;
+    top: 0;
+    
+  }
+  .logo{
+    width:20%
+  }
+  
+  .navbar .menu-btn {
+    display: none;
+  }
+  
+  .navbar .menu-item {
+    display: flex;
+    float: right;
+    font-size: 18px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+  }
+  
+  .navbar .menu-item a {
+    display: inline-block;
+    padding: 0px 40px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: 0.6s;
+    
+  }
+  
+  .navbar .menu-item a:hover {
+    color: #0C4F60;
+  }
+  
+  .navbar #check {
+    display: none;
+  }
+  
+  @media (max-width:800px) {
+    .navbar .menu-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+
+    }
+    .navbar .menu-btn label {
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      padding: 13px;
+      transition: 1s;
+      border-radius: 6px;
+    }
+    .navbar .menu-btn label:hover,.navbar  #check:checked ~ .menu-btn label {
+      background-color: #0C4F60;
+    }
+    .navbar .menu-btn label span {
+      display: block;
+      width: 25px;
+      height: 5px;
+      border-top: 2px solid #000;
+    }
+    .navbar .menu-item {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #0C4F60;
+      opacity:0.9;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      z-index: 2;
+      
+    }
+    .navbar .menu-item a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 22px;
+      padding: 20px;
+      
+    }
+    .navbar #check:not(:checked) ~ .menu-item {
+      height: 0px;
+    }
+    .navbar #check:checked ~ .menu-item {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  
+  h1 {
+    margin: 40px;
+    font-size: 42px;
+    color: #000;
+    font-weight: bold;
+  }
+  a{
+    text-decoration: none;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+  }
+  span{
+    font-weight: bold;
+    color: #0C4F60;
+  }
+  
+ 
+  .header p{
+    margin-left: auto;
+    font-size: 21px;
+    color: #000;
+    padding: 0 130px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  #countdowntimer { 
+    text-align: center;
+    padding-top: 70px;
+    font-size:72px;
+    letter-spacing: 10px;
+  } 
+  @media (max-width:800px) {
+    #countdowntimer { 
+    font-size:60px;
+    letter-spacing: 5px;
+    }
+    .header p{
+      padding: 0 20px;
+    }
+  }
+  @media (max-width:500px) {
+    #countdowntimer { 
+    font-size:40px;
+      letter-spacing: 5px;
+    }
+  }
+  .count{
+     color: #000;
+  }
+  .mail{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .mail input[type= "email"]{
+    width: 200px;
+    padding: 7px 10px;
+    background: transparent;
+    border: 3px solid #0C4F60;
+    border-radius: 8px;
+    transition: 1s;
+    color: #0C4F60;
+  }
+  .mail input[type= "email"]:hover, .mail input[type= "email"]:focus{
+    background: #000;
+    cursor: auto;
+    transform: scale(1.1);
+    margin-right: 12px;
+  }
+  .mail input[type= "submit"]{
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fa8231;
+    font-weight: bold;
+    color: #000;
+    margin-top: 2px;
+    transition: 1s;
+  }
+  .mail input[type= "submit"]:hover{
+    transform: scale(1.1);
+    margin-left: 6px;
+  }
+  @media (max-width:500px) {
+    .mail input[type= "submit"]{
+      margin-top: 20px;
+    }
+  }
+  
+  
+  

@@ -1,7 +1,7 @@
 
 body{
     
-    background:url(../images/bg4.png)no-repeat;
+    background:url(../images/bg5.png)no-repeat;
     background-size:100%;
 }
 h2{
@@ -23,46 +23,26 @@ h2{
     box-sizing:border-box ;
     font-family: "Poppins",sans-serif;
 }
-.media-icons{
-    position:relative;
-    display:flex;
-    align-items:center;
-    margin:10px 0;
-    flex-wrap: wrap;
-  
-  }
-  .media-icons li{
-    list-style:none;
-  }
-  .media-icons li a{
-  font-size:2em;
-  color:#262626;
-  margin:0 10px;
-  display:inline-block;
-  transition:0.5s
-  }
-  .media-icons li a:hover {
-    transform:translateY(-10px)
-  }
+
 
             .login{
                 background-color: rgba(114,223,255,0.8);
                 margin-bottom: 10%;
-              
+              height:65%;
+              width: 50%;
                 position:fixed;
-                padding:60px;
+                padding:50px;
                 top:52%;
                 left:36%;
                 transform:translate(-50%,-50%);
                 border-top-left-radius: 100px;
                 border-bottom-right-radius:100px
             }
-            .login input[type="text"],input[type="date"]{
+            .login input[type="text"],input[type="date"],select{
                 
                 margin: 20px auto;
                 padding:10px 10px;
-                width:250px; 
-                background-color:none ;
+                width:40%; 
                 border:2px solid block;
                 border-radius: 15px;
                 transition:0.8s;
@@ -77,13 +57,14 @@ h2{
                 margin: 20px 20px;
                 margin-left: 62%;
             }
-            .login input[type="button"]{
+            .login input[type="submit"]{
                 color:black;
                 background:none;
                 text-decoration:none;
                 text-transformation:uppercase;
                 font-weight:700;
-                margin-left: 90%;
+                margin-left: 80%;
+                margin-top:0.03%;
                 letter-spacing:2px;
                 padding:10px 20px;
                 border-radius:5px;

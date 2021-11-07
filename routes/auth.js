@@ -9,7 +9,7 @@ var passport=require("./passport")
         router.post('/login' , passport.authenticate('local',{
             
                     failureRedirect :"/admin",
-                                successRedirect :"/",
+                                successRedirect :"/dashboard",
                                         }));
                                             return router;
                                             }

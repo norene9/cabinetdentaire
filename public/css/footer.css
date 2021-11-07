@@ -1,92 +1,81 @@
 
-/*body{
-  display:flex;
-  justify-content: flex-end;
-  align-items:felx-end;
-  min-height: 100vh;
-  background: #333;
-}*/
-footer{
-  position:fixed;
-  width: 100%;
-  /*background: #3586ff;*/
-  height: 2px;
-  padding:20px 50px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction: column;
- bottom: 10%;
+ .cardb{
+  background-color: rgba(114,223,255,0.8);
+  background: rgb(230, 228, 228);
+box-shadow: 0 8px 8px -4px lightblue;
+
+      border-top-left-radius: 100px;
+      border-bottom-right-radius:100px
 }
-footer .socialicon{
+
+h3{
+  margin-left: 200px;
+  color:#226A80;
+    font-size:55px;
+    text-transformation:uppercase;
+    font-weight:800;
+    letter-spacing:2px;
+    line-height:60px;
+}
+h4{
+  color:#e11896;
+  fontst-size:50px;
+    font-weight:600;
+}
+.footer-basic {
+padding:40px 0;
+background-color:#ffffff;
+color:#4b4c4d;
+}
+.py-5{
   position:relative;
-  display:flex;
-  align-items:center;
-  margin:10px 0;
-  flex-wrap: wrap;
+  margin-top:10%;
+}
+.footer-basic ul {
+padding:0;
+list-style:none;
+text-align:center;
+font-size:18px;
+line-height:1.6;
+margin-bottom:0;
+}
+.footer-basic {
+  background-color: rgb(143, 177, 241);
+}
 
+.footer-basic li {
+padding:0 10px;
 }
-footer .socialicon li{
-  list-style:none;
+
+.footer-basic ul a {
+color:inherit;
+text-decoration:none;
+opacity:0.8;
 }
-footer .socialicon li a{
-font-size:2em;
-color:#262626;
-margin:0 10px;
+
+.footer-basic ul a:hover {
+opacity:1;
+}
+
+.footer-basic .social {
+text-align:center;
+padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+font-size:24px;
+width:40px;
+height:40px;
+line-height:40px;
 display:inline-block;
-transition:0.5s
+text-align:center;
+border-radius:50%;
+border:1px solid #ccc;
+margin:0 8px;
+color:inherit;
+opacity:0.75;
 }
-footer .socialicon li a:hover {
-  transform:translateY(-10px)
-}
-/*footer .wave{
-  position:absolute;
-  top:-100px;
-  left:0;
-  width:100%;
-  height:100px;
-  background:url(../images/wave.png);
-  background-size:1000px 100px;
-}
-footer .wave#wave1{
-  z-index:1000;
-  opacity:1;
-  bottom:0;
-  animation:animateWave 10s linear infinite;
-}
-@keyframes animateWave{
-  0%{
-    background-position-x:1000px ;
-  }
-  100%{
-    background-position:0px ;
 
-  }
+.footer-basic .social > a:hover {
+opacity:0.9;
 }
-footer .wave#wave2{
-  z-index:999;
-  opacity:0.5;
-  bottom:10px;
-  animation:animateWave_2 12s linear infinite;
-}
-footer .wave#wave3{
-  z-index:1000;
-  opacity:0.7;
-  bottom:15px;
-  animation:animateWave 23s linear infinite;
-}
-footer .wave#wave4{
-  z-index:999;
-  opacity:0.2;
-  bottom:20px;
-  animation:animateWave 3s linear infinite;
-}
-@keyframes animateWave_2{
-  0%{
-    background-position-x:0px ;
-  }
-  100%{
-    background-position:1000px ;
-
-  }
-}*/

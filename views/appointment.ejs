@@ -2,38 +2,55 @@
 
 <html>
     <head>
+      <%- include('header'); -%>
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width,initial-scale=1.0">
         <title>الحجز</title>
         <link rel="stylesheet" href="/css/app.css">
-   
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
-    <%- include('header'); -%>
+
     <body>
-    
+      <% if (flashMessages) { %>
+        <%if (flashMessages.success) { %>
+          <div class="alert alert-success alert-dismissible fade in" role="alert">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+
+            <strong>مبروك</strong>تم الحجز بنجاح
+           
+          </div>
+      <% } %>
+      <% } %> 
  <div class="app" >
  
-  <form class="login">
+  <form class="login" action="/AddApp" method="POST">
     <h1>احجز موعدك</h1>
     <div  class="row">
     
-        <input type="text" name="Name" placeholder="الاسم">
-        <input type="text" name="Name" placeholder="اللقب">
+        <input type="text"  name="prenom" id="prenom" placeholder="الاسم">
+        <input type="text" name="nom" id="nom"placeholder="اللقب">
       
     
     </div>
    
-    <input type="text" name="Num" placeholder="رقم الهاتف">
+    <input type="text" name="num" id="num" placeholder="رقم الهاتف">
     
     
-  <input type="date" id="start" name="trip-start" value="2020-07-22" min="2021-01-01" max="2027-12-31">
-  
-    <input type="button" name="login" value="Next">
+  <input type="date" id="date" name="date" value="2020-07-22" min="2021-01-01" max="2027-12-31">
+<p>سبب الموعد</p>
+
+  <select name="service">
+   
+    <option value="لع ضرس">قلع ضرس</option>
+    <option value="رميم">ترميم</option>
+    <option value="تركيب طقم أسنا">تركيب طقم أسنان</option>
+  </select>
+    <input type="submit" name="login"  value="تأكيد">
   </form>
  </div>      
-
+ <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
    
 </body>
-<%- include('footer'); -%>
   </html>

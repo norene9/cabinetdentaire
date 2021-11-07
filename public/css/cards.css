@@ -1,0 +1,38 @@
+.card-block{
+  background-color: rgba(114,223,255,0.8);
+  box-shadow: 0 0 50px #ccc;
+      border-top-left-radius: 100px;
+      border-bottom-right-radius:100px
+}
+#ta9m{
+  background: url("/images/ta9m.jpeg");
+}
+#dtatrage{
+  background: url("/images/dtatrage.jpeg");  
+}
+#fa7s{
+  background: url("/images/fake.jpeg");   
+}
+#whiting{
+  background: url("/images/whiting.jpeg");   
+}
+#seramic{
+  background: url("/images/seramic.jpeg");   
+}
+h3{
+  margin-left: 200px;
+  color:#226A80;
+    font-size:55px;
+    text-transformation:uppercase;
+    font-weight:800;
+    letter-spacing:2px;
+    line-height:60px;
+}
+h4{
+  color:#e11896;
+  fontst-size:50px;
+    font-weight:600;
+}
+.blockquote{
+  margin-top: 200px;
+}

@@ -10,6 +10,8 @@ module.exports=(sequelize,type)=>{
         Prenom:type.STRING,
         numero:type.STRING,
         date:type.DATEONLY,
-        hour:type.STRING
+        hour:type.STRING,
+        service:type.STRING,
+        status:type.STRING
     })
 }
