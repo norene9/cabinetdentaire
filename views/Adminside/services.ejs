@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png" />
+    <title>عيادة الدكتور بوبرطة</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+  
+        <%- include('./headerAdmin'); -%>
+
+  
+
+        <% if (services.length!==0){%>
+      
+    <!-- offers_area_start -->
+    <div class="our_department_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-55">
+                        <h3>أخر الاعمال</h3>
+                      
+                    </div>
+                </div>
+            </div>
+            <% for(var i=0;i< services.length;i++){%>
+            <div class="row">
+              
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_department">
+                        <div class="department_thumb">
+                            <a ><img src="<%=services[i].pic%>" width="50%" height="50%"></a>
+                        </div>
+                        <div class="department_content">
+                            <h3><a href="#"><%=services[i].service%></a></h3>
+                
+                            <a href="deletservice/<%=services[i].id%>" class="learn_more">حدف</a>
+                        </div>
+                    </div>
+                </div>
+                <%}%>
+							
+               
+            </div>
+        </div>
+    </div>
+    <%}%>
+    <!-- offers_area_end -->

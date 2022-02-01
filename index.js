@@ -19,15 +19,15 @@ var routes=require('./routes/general')
 var Passport=require('passport').Passport, passport=new Passport();
 var userRouter=require('./routes/passport')
 app.use('/passport',userRouter);
+var path = require('path');
 const port='8060'
 //seting view
 app.set('view engine','ejs');
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/upload'));
 app.use('/',routes)
-//gettin page
-app.get('/',(req,res)=>{
-    res.render('home')
-})
+
+
 //server
 app.listen(port,console.log('app running at '+port)) 
 
